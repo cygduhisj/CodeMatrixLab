@@ -1,3 +1,4 @@
-const word = "hello";
-const reversedWord = word.split("").reverse().join("");
-console.log(reversedWord); // olleh
+function fibonacci(n) {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
