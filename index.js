@@ -1,4 +1,7 @@
-const intersection = (a, b) => {
-  const s = new Set(b);
-  return a.filter((x) => s.has(x));
-};
+function singleNumber(nums) {
+  let result = 0;
+  for (const num of nums) {
+    result ^= num;
+  }
+  return result;
+}
